@@ -1,7 +1,6 @@
 mpa_django_react_bundle
 =======================
 
-Integración de React y Django con django webpack loader
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
@@ -12,6 +11,9 @@ Integración de React y Django con django webpack loader
 
 
 :License: MIT
+
+Integración de React y Django con django webpack loader
+
 
 Backend
 -------
