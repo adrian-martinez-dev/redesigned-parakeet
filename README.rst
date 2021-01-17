@@ -1,7 +1,7 @@
 mpa_django_react_bundle
 =======================
 
-Behold My Awesome Project!
+Integración de React y Django con django webpack loader
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
@@ -12,6 +12,21 @@ Behold My Awesome Project!
 
 
 :License: MIT
+
+Backend
+-------
+
+::
+
+    $ docker-compose -f local.yml build
+    $ docker-compose -f local.yml up
+
+Frontend
+--------
+
+::
+
+    $ cd frontend; npm run dev
 
 
 Settings
