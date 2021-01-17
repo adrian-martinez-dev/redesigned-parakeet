@@ -4,6 +4,7 @@ Base settings to build other settings files upon.
 from pathlib import Path
 
 import environ
+import os
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 # mpa_django_react_bundle/
@@ -68,6 +69,7 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "webpack_loader",
 ]
 
 LOCAL_APPS = [
@@ -266,3 +268,13 @@ SOCIALACCOUNT_ADAPTER = "mpa_django_react_bundle.users.adapters.SocialAccountAda
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+FRONTEND_DIR = "frontend"
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'CACHE': DEBUG,
+        'BUNDLE_DIR_NAME': '/react/',  # must end with slash
+        'STATS_FILE': os.path.join(FRONTEND_DIR, 'webpack-stats.json'),
+    }
+}

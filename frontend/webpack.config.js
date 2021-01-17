@@ -4,11 +4,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   entry: {
-    frontend: './frontend/src/index.js',
+    frontend: '../frontend/src/index.js',
   },
   output: {
-    path: path.resolve('./frontend/static/frontend/'),
-    filename: '[name]-[hash].js',
+    publicPath: '',
+    path: path.resolve('../mpa_django_react_bundle/static/react/'),
+    filename: '[name]-[fullhash].js',
   },
   plugins: [
     new CleanWebpackPlugin(),
